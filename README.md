@@ -14,7 +14,7 @@ These are OpenGL benchmarking applications that display the rendering settings.
 
 Now execute one of the commands below and make sure the output displays Nvidia information:
 
-`$ glxinfo | grep -i vendor` OR `$ glmark2` 
+`$ optirun glxinfo | grep -i vendor` OR `$ optirun glmark2` 
 
 ```
 # Command output must display NVIDIA information
@@ -82,9 +82,9 @@ It might take a few minutes to complete.
 `$ ./build`
 
 __Step 4: Make sure your docker image can execute__: We provide a script to execute commands in the container you just built.
-To verify that it is working, you can execute a simple command that checks the integration with the nvidia drivers.
+To verify that it is working, you can execute a simple command that checks the integration with the nvidia drivers. 
 
-`$ ./run.sh nvidia-smi`
+`$ optirun ./run.sh nvidia-smi`
 
 Make sure it  displays your nvidia-card information.
 
@@ -111,9 +111,10 @@ __Step 5: Make sure you can execute GL applications with nvidia__: Rendering
 is a separate thing and we need to make sure the container uses the Nvidia GPU card
 to render GL applications as well. You can check this with the same previous
 `glxinfo` command, but now from inside the container, to see if Nvidia is the driver in use:
+**For GL We need to use optirun from inside the  container as well.**
 
 `
-$ ./run.sh glxinfo | grep -i vendor
+$ optirun ./run.sh optirun glxinfo | grep -i vendor
 `
 
 If the output contains NVIDIA information __CONGRATULATIONS__!!! 
