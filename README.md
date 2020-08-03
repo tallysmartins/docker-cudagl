@@ -29,7 +29,7 @@ applications within your GPU, otherwise you have to make this work before contin
 
 ### Installing docker
 
-Below we describe the steps to run it. There are further details that you can read here in this docker [README.md](docker/RREADME.md).
+Below we describe the steps to run it.
 
 __Step 1: Install docker__: Install a docker version >= 19. On Ubuntu 18.04 you can have it by installing the `docker.io` package.
 
