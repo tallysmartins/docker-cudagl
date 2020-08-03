@@ -1,4 +1,4 @@
-# Docker Nividia GL + CUDA 
+# Docker Nvidia GL + CUDA 
 
 Docker containers with nvidia drivers that allow CUDA and GL applications;
 
