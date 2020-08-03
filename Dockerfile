@@ -6,7 +6,7 @@
 # Blog post on how to expose x-server to docker, allowing OpenGL applications
 # https://medium.com/@benjamin.botto/opengl-and-cuda-applications-in-docker-af0eece000f1
 
-FROM nvidia/cudagl:10.1-devel-ubuntu18.04 
+FROM nvidia/cudagl:10.1-base-ubuntu18.04 
 
 # Disable interactive mode for installed packages
 ENV DEBIAN_FRONTEND noninteractive
