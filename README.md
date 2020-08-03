@@ -16,10 +16,6 @@ Now execute one of the commands below and make sure the output displays Nvidia i
 
 `$ glxinfo | grep -i vendor` OR `$ glmark2` 
 
-Or the optimus version
-
-`optirun glxinfo | grep -i vendor` OR `optirun glmark2`
-
 ```
 # Command output must display NVIDIA information
 
